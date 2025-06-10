@@ -7,7 +7,7 @@ use App\Http\Controllers\ProdiController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    return view('welcome');
+    return redirect('welcome');
 });
 
 Route::resource('/fakultas', FakultasController::class);
